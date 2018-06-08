@@ -305,10 +305,8 @@ var barcode = (function() {
 
     console.log("quality: " + quality);
 
-    if (quality < config.quality) {
-      if (handler != null) {
-        handler(checkDigit + result.join(""));
-      }
+    if (handler != null) {
+      handler(checkDigit + result.join(""));
     }
   }
 
